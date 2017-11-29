@@ -130,3 +130,4 @@ Session.vim
 tags
 
 /bot_mother/settings_local.py
+.DS_Store
