@@ -62,32 +62,6 @@ def send_dont_know_message():
     pass
 
 
-# try:
-#     user_company = UserCompany.objects.filter(user=user, authorized=True)
-#     if user_company:
-#         message_type = "start_message_company"
-#
-# except:
-#     pass
-#
-# find_resp = check_response(message_type, update.text)
-# if find_resp:
-#     if find_resp == 'my_bonus':
-#         from bot.modules.bonus_list_module import favorite_bonus
-#
-#         favorite_bonus(bot, user, update)
-#     elif find_resp == 'repay_bonus':
-#         messages = generate_repay_bonus_messages(user)
-#         for message in messages:
-#             bot.respond(user, message)
-#         user.push_context(state="repay_bonus")
-#         return
-#
-# else:
-#     from bot.modules.user_bonus_module import add_user_bonus
-#     add_user_bonus(bot, user, update)
-
-
 def generate_repay_bonus_messages(user):
     mesages = [generate_message('repay_bonus')]
     return mesages
